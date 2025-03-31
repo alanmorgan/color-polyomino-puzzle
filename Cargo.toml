@@ -1,0 +1,18 @@
+[package]
+name = "polycolorpuzzle"
+authors = [ "alanmorgan <thefamouseccles@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.polyomino]
+path = "../rust-polyomino-solver"
+
+[[bin]]
+name = "polycolorpuzzle"
+path = "src/main.rs"
+
+[dependencies]
+bit-vec="*"
+heuristic-graph-coloring="0.1.0"
+point-derive = { path = "../rust-polyomino-solver/point-derive" }
+colored="*"
